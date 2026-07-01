@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamer•Hub - Terms & Conditions</title>
+    <style>
+        /* ========================================
+           BRAND COLORS
+           ======================================== */
+        :root {
+            --dark: #0B0B0B;
+            --dark-navy: #1A1A2E;
+            --purple: #7B2FBE;
+            --blue: #3B82F6;
+            --cyan: #00F0FF;
+            --gold: #F59E0B;
+            --light: #F5F5F5;
+            --gray: #9CA3AF;
+            --red: #EF4444;
+            --green: #10B981;
+        }
+
+        /* ========================================
+           RESET & BASE
+           ======================================== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--dark);
+            color: var(--light);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        a {
+            color: var(--cyan);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--purple);
+        }
+
+        /* ========================================
+           CONTAINER
+           ======================================== */
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 24px 20px 60px;
+        }
+
+        /* ========================================
+           HEADER WITH LOGO
+           ======================================== */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .logo-icon {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, var(--purple), var(--blue));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 20px;
+            color: #fff;
+            flex-shrink: 0;
+            box-shadow: 0 0 30px rgba(123, 47, 190, 0.25);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text .gamer {
+            font-size: 26px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        .logo-text .hub {
+            font-size: 26px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, var(--purple), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-text .tagline {
+            font-size: 9px;
+            letter-spacing: 3px;
+            color: var(--gray);
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+
+        .badge-legal {
+            font-size: 11px;
+            background: rgba(123, 47, 190, 0.2);
+            border: 1px solid rgba(123, 47, 190, 0.3);
+            color: var(--gray);
+            padding: 4px 14px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        /* ========================================
+           TITLE
+           ======================================== */
+        .page-title {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 6px;
+            background: linear-gradient(90deg, #fff, var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-subtitle {
+            color: var(--gray);
+            font-size: 15px;
+            margin-bottom: 32px;
+            border-left: 3px solid var(--purple);
+            padding-left: 16px;
+        }
+
+        /* ========================================
+           TABLE OF CONTENTS
+           ======================================== */
+        .toc {
+            background: var(--dark-navy);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .toc-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gray);
+            margin-bottom: 10px;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 4px 20px;
+        }
+
+        .toc-grid a {
+            font-size: 14px;
+            color: var(--light);
+            opacity: 0.7;
+            transition: opacity 0.3s ease, color 0.3s ease;
+            display: block;
+            padding: 2px 0;
+        }
+
+        .toc-grid a:hover {
+            opacity: 1;
+            color: var(--cyan);
+        }
+
+        /* ========================================
+           SECTIONS
+           ======================================== */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-number {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--purple);
+            background: rgba(123, 47, 190, 0.12);
+            padding: 2px 12px;
+            border-radius: 12px;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .section h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: var(--cyan);
+        }
+
+        .section p,
+        .section li {
+            color: #d1d5db;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .section ul,
+        .section ol {
+            padding-left: 24px;
+            margin-bottom: 14px;
+        }
+
+        .section li {
+            margin-bottom: 6px;
+        }
+
+        .section .highlight-box {
+            background: rgba(123, 47, 190, 0.06);
+            border-left: 3px solid var(--purple);
+            padding: 14px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+
+        .section .highlight-box strong {
+            color: #fff;
+        }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            text-align: center;
+        }
+
+        .footer .logo-small {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .footer .logo-small .g {
+            color: #fff;
+        }
+
+        .footer .logo-small .h {
+            background: linear-gradient(90deg, var(--purple), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer p {
+            color: var(--gray);
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: var(--gray);
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--cyan);
+        }
+
+        .footer .contact {
+            color: var(--cyan);
+            font-weight: 500;
+        }
+
+        /* ========================================
+           RESPONSIVE
+           ======================================== */
+        @media (max-width: 640px) {
+            .container {
+                padding: 16px 14px 40px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .logo-text .gamer,
+            .logo-text .hub {
+                font-size: 20px;
+            }
+
+            .page-title {
+                font-size: 24px;
+            }
+
+            .toc-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .section h2 {
+                font-size: 19px;
+            }
+
+            .badge-legal {
+                align-self: flex-start;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ============================================
+        HEADER WITH LOGO
+        ============================================ -->
+        <header class="header">
+
+            <div class="logo-wrapper">
+                <!-- Logo Icon (G/H) -->
+                <div class="logo-icon">G/H</div>
+
+                <!-- Logo Text -->
+                <div class="logo-text">
+                    <span class="gamer">GAMER</span>
+                    <span class="hub">HUB</span>
+                    <span class="tagline">Play. Connect. Compete. Earn.</span>
+                </div>
+            </div>
+
+            <span class="badge-legal">📜 Terms &amp; Conditions</span>
+
+        </header>
+
+        <!-- ============================================
+        TITLE
+        ============================================ -->
+        <h1 class="page-title">Terms &amp; Conditions</h1>
+        <p class="page-subtitle">
+            <strong>Effective Date:</strong> July 1, 2026 &nbsp;·&nbsp;
+            <strong>Last Updated:</strong> July 1, 2026
+        </p>
+
+        <!-- ============================================
+        TABLE OF CONTENTS
+        ============================================ -->
+        <div class="toc">
+            <div class="toc-title">📑 Table of Contents</div>
+            <div class="toc-grid">
+                <a href="#section-1">1. Introduction</a>
+                <a href="#section-2">2. Eligibility</a>
+                <a href="#section-3">3. User Accounts</a>
+                <a href="#section-4">4. User Conduct</a>
+                <a href="#section-5">5. Prohibited Activities</a>
+                <a href="#section-6">6. Content &amp; Intellectual Property</a>
+                <a href="#section-7">7. Virtual Currency &amp; Payments</a>
+                <a href="#section-8">8. Tournaments &amp; Prizes</a>
+                <a href="#section-9">9. Tutoring Services</a>
+                <a href="#section-10">10. Live Streaming</a>
+                <a href="#section-11">11. Gifts &amp; Donations</a>
+                <a href="#section-12">12. Termination</a>
+                <a href="#section-13">13. Disclaimer of Warranties</a>
+                <a href="#section-14">14. Limitation of Liability</a>
+                <a href="#section-15">15. Indemnification</a>
+                <a href="#section-16">16. Privacy &amp; Data</a>
+                <a href="#section-17">17. Governing Law</a>
+                <a href="#section-18">18. Dispute Resolution</a>
+                <a href="#section-19">19. Changes to These Terms</a>
+                <a href="#section-20">20. Contact Us</a>
+            </div>
+        </div>
+
+        <!-- ============================================
+        SECTION 1
+        ============================================ -->
+        <section class="section" id="section-1">
+            <span class="section-number">Section 1</span>
+            <h2>Introduction</h2>
+            <p>
+                Welcome to <strong>Gamer•Hub</strong> ("Platform," "we," "us," or "our").
+                These Terms &amp; Conditions ("Terms") govern your access to and use of
+                our website, mobile application, and all related services
+                (collectively, the "Services").
+            </p>
+            <p>
+                By creating an account, accessing, or using our Services, you agree to be
+                bound by these Terms. If you do not agree to these Terms, please do not
+                use our Services.
+            </p>
+            <div class="highlight-box">
+                <strong>📧 Contact:</strong>
+                <a href="mailto:gamerhub117x@gmail.com">gamerhub117x@gmail.com</a>
+            </div>
+        </section>
+
+        <!-- ============================================
+        SECTION 2
+        ============================================ -->
+        <section class="section" id="section-2">
+            <span class="section-number">Section 2</span>
+            <h2>Eligibility and Age Restrictions</h2>
+            <p>
+                By using Gamer•Hub, you represent and warrant that:
+            </p>
+            <ul>
+                <li>You are at least <strong>18 years of age</strong> (or the legal age of majority in your jurisdiction).</li>
+                <li>You have the legal capacity to enter into a binding agreement.</li>
+                <li>You are not a person barred from using our Services under applicable laws.</li>
+                <li>You are not located in a country that is subject to a U.S. government embargo.</li>
+            </ul>
+            <p>
+                If you are under 18, you may only use our Services with the consent and
+                supervision of a parent or legal guardian who agrees to be bound by these Terms.
+            </p>
+        </section>
+
+        <!-- ============================================
+        SECTION 3
+        ============================================ -->
+        <section class="section" id="section-3">
+            <span class="section-number">Section 3</span>
+            <h2>User Accounts</h2>
+
+            <h3>3.1 Account Creation</h3>
+            <p>
+                To access certain features, you must create an account. You agree to:
+            </p>
+            <ul>
+                <li>Provide accurate, complete, and current information.</li>
+                <li>Maintain the security of your account credentials.</li>
+                <li>Notify us immediately of any unauthorized use of your account.</li>
+                <li>Be solely responsible for all activities that occur under your account.</li>
+            </ul>
+
+            <h3>3.2 Account Security</h3>
+            <p>
+                You are solely responsible for maintaining the confidentiality of your
+                password and account. We will not be liable for any loss or damage
+                arising from your failure to protect your account information.
+            </p>
+
+            <h3>3.3 Account Types</h3>
+            <ul>
+                <li><strong>Free Account:</strong> Basic access to the Platform.</li>
+                <li><strong>Plus Account:</strong> Premium features including tournament creation, tutoring creation, and more.</li>
+                <li><strong>Verified Account:</strong> Accounts verified by Gamer•Hub administrators.</li>
+            </ul>
+        </section>
+
+        <!-- ============================================
+        SECTION 4
+        ============================================ -->
+        <section class="section" id="section-4">
+            <span class="section-number">Section 4</span>
+            <h2>User Conduct</h2>
+            <p>
+                You agree to use the Platform responsibly and respectfully. You must not:
+            </p>
+            <ul>
+                <li>Harass, abuse, threaten, or defame other users.</li>
+                <li>Post or share inappropriate, offensive, or harmful content.</li>
+                <li>Impersonate another person or entity.</li>
+                <li>Engage in any form of cheating, hacking, or exploiting the Platform.</li>
+                <li>Attempt to manipulate tournament results, match outcomes, or rankings.</li>
+                <li>Create multiple accounts to evade restrictions or bans.</li>
+                <li>Share, sell, or transfer your account credentials.</li>
+                <li>Use the Platform for any illegal or unauthorized purpose.</li>
+            </ul>
+            <div class="highlight-box">
+                <strong>⚠️ Reputation System:</strong>
+                Violations of these rules may result in a decrease in your reputation score,
+                which can affect your ability to access certain features.
+            </div>
+        </section>
+
+        <!-- ============================================
+        SECTION 5
+        ============================================ -->
+        <section class="section" id="section-5">
+            <span class="section-number">Section 5</span>
+            <h2>Prohibited Activities</h2>
+            <p>
+                The following activities are strictly prohibited:
+            </p>
+
+            <h3>5.1 Cheating and Exploitation</h3>
+            <ul>
+                <li>Using hacks, mods, or unauthorized third-party software.</li>
+                <li>Exploiting bugs or glitches for unfair advantage.</li>
+                <li>Colluding with other players to manipulate matches or tournaments.</li>
+                <li>Falsifying match results, screenshots, or any verification materials.</li>
+            </ul>
+
+            <h3>5.2 Fraudulent Activity</h3>
+            <ul>
+                <li>Using stolen or fraudulent payment methods.</li>
+                <li>Engaging in money laundering or any financial crime.</li>
+                <li>Creating fake accounts to inflate statistics or gain rewards.</li>
+                <li>Falsifying identity documents or verification details.</li>
+            </ul>
+
+            <h3>5.3 Platform Abuse</h3>
+            <ul>
+                <li>Spamming, flooding, or disrupting other users' experience.</li>
+                <li>Posting malicious links or distributing malware.</li>
+                <li>Attempting to gain unauthorized access to the Platform or user data.</li>
+                <li>Reverse engineering, decompiling, or disassembling any part of the Platform.</li>
+            </ul>
+
+            <h3>5.4 Content Restrictions</h3>
+            <ul>
+                <li>Posting content that is defamatory, obscene, or pornographic.</li>
+                <li>Sharing content that violates third-party intellectual property rights.</li>
+                <li>Posting hate speech, discrimination, or incitement to violence.</li>
+                <li>Sharing personal information of others without consent (doxxing).</li>
+            </ul>
+        </section>
+
+        <!-- ============================================
+        SECTION 6
+        ============================================ -->
+        <section class="section" id="section-6">
+            <span class="section-number">Section 6</span>
+            <h2>Content and Intellectual Property</h2>
+
+            <h3>6.1 Ownership</h3>
+            <p>
+                All content, trademarks, logos, and intellectual property displayed on
+                the Platform are the exclusive property of Gamer•Hub or its licensors.
+                You may not copy, reproduce, distribute, or create derivative works
+                without prior written consent.
+            </p>
+
+            <h3>6.2 User-Generated Content</h3>
+            <p>
+                By posting, uploading, or sharing content on the Platform, you grant us
+                a worldwide, non-exclusive, royalty-free, perpetual, and transferable
+                license to use, reproduce, distribute, and display your content in
+                connection with our Services.
+            </p>
+            <ul>
+                <li>You retain ownership of your content.</li>
+                <li>You represent that you have all rights to grant this license.</li>
+                <li>We reserve the right to remove any content at our sole discretion.</li>
+            </ul>
+
+            <h3>6.3 DMCA Compliance</h3>
+            <p>
+                We respect intellectual property rights. If you believe that your work
+                has been copied in a way that constitutes copyright infringement,
+                please contact us at <a href="mailto:gamerhub117x@gmail.com">gamerhub117x@gmail.com</a>
+                with a detailed notice.
+            </p>
+        </section>
+
+        <!-- ============================================
+        SECTION 7
+        ============================================ -->
+        <section class="section" id="section-7">
+            <span class="section-number">Section 7</span>
+            <h2>Virtual Currency and Payments</h2>
+
+            <h3>7.1 Gamer Coins (GC)</h3>
+            <ul>
+                <li>"Gamer Coins" (GC) are the virtual currency used on the Platform.</li>
+                <li>GC can be purchased, earned, or received as gifts.</li>
+                <li>GC has no real-world value outside the Platform.</li>
+                <li>GC is non-refundable and non-transferable.</li>
+                <li>We reserve the right to adjust GC values or exchange rates at our discretion.</li>
+            </ul>
+
+            <h3>7.2 Deposits</h3>
+            <ul>
+                <li>Deposits are processed via Flutterwave (primary) and PayStack (fallback).</li>
+                <li>All deposits are subject to payment gateway terms and fees.</li>
+                <li>You are responsible for any transaction fees or conversion charges.</li>
+                <li>We are not responsible for errors made during deposit transactions.</li>
+            </ul>
+
+            <h3>7.3 Withdrawals</h3>
+            <ul>
+                <li>Withdrawal requests are subject to review and approval.</li>
+                <li>Minimum withdrawal amounts apply (to be specified on the Platform).</li>
+                <li>Withdrawals are processed via Flutterwave.</li>
+                <li>You are responsible for providing accurate banking details.</li>
+                <li>We are not liable for withdrawal errors caused by incorrect information.</li>
+                <li>Withdrawal fees may apply.</li>
+                <li>Processing times may vary.</li>
+            </ul>
+
+            <h3>7.4 Refunds and Chargebacks</h3>
+            <ul>
+                <li>All virtual currency purchases are final.</li>
+                <li>We do not offer refunds for accidental purchases.</li>
+                <li>Chargebacks may result in account suspension or termination.</li>
+                <li>You are responsible for any fees incurred from chargebacks.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>💰 Important:</strong>
+                Gamer Coins are for entertainment purposes only and have no real-world value.
+                We are not a financial institution and do not offer financial services.
+            </div>
+        </section>
+
+        <!-- ============================================
+        SECTION 8
+        ============================================ -->
+        <section class="section" id="section-8">
+            <span class="section-number">Section 8</span>
+            <h2>Tournaments and Prizes</h2>
+
+            <h3>8.1 Tournament Participation</h3>
+            <ul>
+                <li>Tournaments are subject to specific rules and eligibility requirements.</li>
+                <li>You must pay the entry fee (if applicable) to participate.</li>
+                <li>You agree to abide by tournament rules and decisions.</li>
+                <li>We reserve the right to disqualify participants for rule violations.</li>
+            </ul>
+
+            <h3>8.2 Prize Pools and Payouts</h3>
+            <ul>
+                <li>Prizes are paid in Gamer Coins (GC).</li>
+                <li>Prizes are credited to the winner's wallet.</li>
+                <li>We reserve the right to verify results before prize distribution.</li>
+                <li>Taxes on prizes are the sole responsibility of the winner.</li>
+                <li>You are responsible for providing accurate payment information.</li>
+            </ul>
+
+            <h3>8.3 Disputes</h3>
+            <ul>
+                <li>Match disputes are reviewed by our team.</li>
+                <li>Disputed matches may be resolved by force decision.</li>
+                <li>All decisions are final and binding.</li>
+                <li>Submitting false or manipulated evidence will result in penalties.</li>
+            </ul>
+
+            <h3>8.4 No Guarantee of Prize</h3>
+            <p>
+                We do not guarantee that you will win any prize. All tournament results
+                are based on fair play and competitive skill.
+            </p>
+        </section>
+
+        <!-- ============================================
+        SECTION 9
+        ============================================ -->
+        <section class="section" id="section-9">
+            <span class="section-number">Section 9</span>
+            <h2>Tutoring Services</h2>
+
+            <h3>9.1 For Tutors</h3>
+            <ul>
+                <li>You must have a Plus subscription to offer tutoring services.</li>
+                <li>You must maintain a minimum reputation score of 80.</li>
+                <li>You are responsible for the quality of your teaching.</li>
+                <li>Missed classes will result in penalties and refunds to students.</li>
+                <li>You agree to maintain professionalism at all times.</li>
+            </ul>
+
+            <h3>9.2 For Students</h3>
+            <ul>
+                <li>You may enroll in tutoring sessions by paying the required fee.</li>
+                <li>You agree to attend sessions on time and respectfully.</li>
+                <li>You may be refunded for missed classes (as per the tutor points system).</li>
+            </ul>
+
+            <h3>9.3 Platform Fee</h3>
+            <p>
+                A 10% platform fee is deducted from tutor payouts. This fee supports
+                the operation and improvement of the Platform.
+            </p>
+
+            <h3>9.4 Tutor Points System</h3>
+            <ul>
+                <li>Tutors start with 100 points.</li>
+                <li>Each missed class deducts 5 points.</li>
+                <li>Below 80 points, the tutor is banned for 2 months.</li>
+                <li>Points recover automatically at 2 points per week of good behavior.</li>
+            </ul>
+        </section>
+
+        <!-- ============================================
+        SECTION 10
+        ============================================ -->
+        <section class="section" id="section-10">
+            <span class="section-number">Section 10</span>
+            <h2>Live Streaming</h2>
+
+            <h3>10.1 Streaming Conduct</h3>
+            <ul>
+                <li>You must not stream inappropriate, illegal, or offensive content.</li>
+                <li>You are responsible for the content of your streams.</li>
+                <li>We reserve the right to terminate streams that violate these Terms.</li>
+            </ul>
+
+            <h3>10.2 Gifts and Donations</h3>
+            <ul>
+                <li>Gifts sent during streams are non-refundable.</li>
+                <li>Streamers receive 100% of gift value in Gamer Coins (GC).</li>
+                <li>We are not responsible for disputes between streamers and viewers.</li>
+            </ul>
+
+            <h3>10.3 Private and Tutoring Streams</h3>
+            <ul>
+                <li>Private streams are restricted to authorized participants.</li>
+                <li>Tutoring streams are restricted to enrolled students.</li>
+                <li>Hosts may ban disruptive participants.</li>
+            </ul>
+        </section>
+
+        <!-- ============================================
+        SECTION 11
+        ============================================ -->
+        <section class="section" id="section-11">
+            <span class="section-number">Section 11</span>
+            <h2>Gifts and Donations</h2>
+
+            <h3>11.1 Gift Catalog</h3>
+            <ul>
+                <li>Gifts can be purchased with Gamer Coins (GC).</li>
+                <li>Gift prices are displayed in the gift catalog.</li>
+                <li>Prices are subject to change at any time.</li>
+            </ul>
+
+            <h3>11.2 Sending Gifts</h3>
+            <ul>
+                <li>Gifts are non-refundable after sending.</li>
+                <li>You cannot send gifts to yourself.</li>
+                <li>Gifts sent during streams are visible to other viewers.</li>
+            </ul>
+
+            <h3>11.3 Receiving Gifts</h3>
+            <ul>
+                <li>Gift value is credited as Gamer Coins (GC).</li>
+                <li>You may withdraw gift earnings subject to withdrawal rules.</li>
+            </ul>
+        </section>
+
+        <!-- ============================================
+        SECTION 12
+        ============================================ -->
+        <section class="section" id="section-12">
+            <span class="section-number">Section 12</span>
+            <h2>Termination and Suspension</h2>
+
+            <h3>12.1 Termination by You</h3>
+            <p>
+                You may delete your account at any time through the Platform settings.
+                Deleting your account is permanent and cannot be undone.
+            </p>
+
+            <h3>12.2 Termination by Us</h3>
+            <p>
+                We may terminate or suspend your account immediately, without notice,
+                for any violation of these Terms, including but not limited to:
+            </p>
+            <ul>
+                <li>Breach of these Terms.</li>
+                <li>Fraudulent or illegal activity.</li>
+                <li>Abuse of the Platform or other users.</li>
+                <li>Non-payment of fees (if applicable).</li>
+                <li>Extended inactivity of your account.</li>
+            </ul>
+
+            <h3>12.3 Effects of Termination</h3>
+            <ul>
+                <li>You lose access to your account and all associated data.</li>
+                <li>Any unused GC may be forfeited.</li>
+                <li>You are not entitled to a refund for any payments made.</li>
+                <li>We reserve the right to delete your data 30 days after termination.</li>
+            </ul>
+        </section>
+
+        <!-- ============================================
+        SECTION 13
+        ============================================ -->
+        <section class="section" id="section-13">
+            <span class="section-number">Section 13</span>
+            <h2>Disclaimer of Warranties</h2>
+            <p>
+                THE PLATFORM AND SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE"
+                WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED.
+            </p>
+            <p>
+                We do not warrant that:
+            </p>
+            <ul>
+                <li>The Platform will be uninterrupted, secure, or error-free.</li>
+                <li>Any defects will be corrected.</li>
+                <li>The Platform will be compatible with your device.</li>
+                <li>You will achieve any specific results.</li>
+            </ul>
+            <p>
+                You use the Platform at your own risk.
+            </p>
+        </section>
+
+        <!-- ============================================
+        SECTION 14
+        ============================================ -->
+        <section class="section" id="section-14">
+            <span class="section-number">Section 14</span>
+            <h2>Limitation of Liability</h2>
+            <p>
+                TO THE FULLEST EXTENT PERMITTED BY LAW, GAMER•HUB SHALL NOT BE LIABLE
+                FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES,
+                INCLUDING BUT NOT LIMITED TO:
+            </p>
+            <ul>
+                <li>Loss of profits, revenue, or data.</li>
+                <li>Loss of reputation or goodwill.</li>
+                <li>Damages arising from unauthorized access to your account.</li>
+                <li>Damages arising from disputes between users.</li>
+                <li>Damages arising from tournament prize disputes.</li>
+            </ul>
+            <p>
+                Our total liability to you shall not exceed the total amount paid by
+                you to us in the 12 months preceding the claim.
+            </p>
+        </section>
+
+        <!-- ============================================
+        SECTION 15
+        ============================================ -->
+        <section class="section" id="section-15">
+            <span class="section-number">Section 15</span>
+            <h2>Indemnification</h2>
+            <p>
+                You agree to indemnify and hold harmless Gamer•Hub, its affiliates,
+                officers, directors, employees, and agents from any claims, damages,
+                losses, liabilities, and expenses (including legal fees) arising from:
+            </p>
+            <ul>
+                <li>Your use of the Platform.</li>
+                <li>Your violation of these Terms.</li>
+                <li>Your violation of any third-party rights.</li>
+                <li>Your conduct in tournaments or tutoring sessions.</li>
+                <li>Any dispute between you and other users.</li>
+            </ul>
+        </section>
+
+        <!-- ============================================
+        SECTION 16
+        ============================================ -->
+        <section class="section" id="section-16">
+            <span class="section-number">Section 16</span>
+            <h2>Privacy and Data Protection</h2>
+            <p>
+                Your privacy is important to us. Our collection and use of your data
+                is governed by our Privacy Policy, which is incorporated into these Terms.
+            </p>
+            <p>
+                By using the Platform, you consent to our collection and use of your
+                data as described in our Privacy Policy.
+            </p>
+            <h3>16.1 Data We Collect</h3>
+            <ul>
+                <li>Account information (username, email, password).</li>
+                <li>Profile information (avatar, bio, location).</li>
+                <li>Payment information (processed by third-party providers).</li>
+                <li>Usage data (posts, comments, likes, tournament participation).</li>
+                <li>Device and IP information for fraud prevention.</li>
+            </ul>
+
+            <h3>16.2 Data Security</h3>
+            <p>
+                We implement reasonable security measures to protect your data. However,
+                no system is 100% secure, and we cannot guarantee absolute security.
+            </p>
+        </section>
+
+        <!-- ============================================
+        SECTION 17
+        ============================================ -->
+        <section class="section" id="section-17">
+            <span class="section-number">Section 17</span>
+            <h2>Governing Law</h2>
+            <p>
+                These Terms shall be governed by and construed in accordance with the
+                laws of the Federal Republic of Nigeria, without regard to its conflict
+                of law principles.
+            </p>
+            <p>
+                Any legal action arising from these Terms shall be filed exclusively in
+                the courts of Nigeria.
+            </p>
+        </section>
+
+        <!-- ============================================
+        SECTION 18
+        ============================================ -->
+        <section class="section" id="section-18">
+            <span class="section-number">Section 18</span>
+            <h2>Dispute Resolution</h2>
+
+            <h3>18.1 Informal Resolution</h3>
+            <p>
+                Before filing any claim, you agree to contact us at
+                <a href="mailto:gamerhub117x@gmail.com">gamerhub117x@gmail.com</a>
+                to attempt to resolve the dispute informally.
+            </p>
+
+            <h3>18.2 Binding Arbitration</h3>
+            <p>
+                Any disputes that cannot be resolved informally shall be resolved
+                through binding arbitration conducted in accordance with the rules of
+                the Lagos Court of Arbitration.
+            </p>
+            <ul>
+                <li>Arbitration shall be conducted in English.</li>
+                <li>The arbitration shall be held in Lagos, Nigeria.</li>
+                <li>Each party shall bear its own arbitration costs.</li>
+                <li>The arbitrator's decision shall be final and binding.</li>
+            </ul>
+
+            <h3>18.3 Class Action Waiver</h3>
+            <p>
+                You agree to bring any claims against us in your individual capacity
+                and not as a plaintiff or class member in any purported class action.
+            </p>
+        </section>
+
+        <!-- ============================================
+        SECTION 19
+        ============================================ -->
+        <section class="section" id="section-19">
+            <span class="section-number">Section 19</span>
+            <h2>Changes to These Terms</h2>
+            <p>
+                We reserve the right to modify these Terms at any time. Changes will be
+                effective immediately upon posting to the Platform.
+            </p>
+            <ul>
+                <li>We will notify you of significant changes via email or platform notification.</li>
+                <li>Your continued use of the Platform after changes constitutes acceptance.</li>
+                <li>If you do not agree to the changes, you must stop using the Platform.</li>
+            </ul>
+            <p>
+                <strong>Last Updated:</strong> July 1, 2026
+            </p>
+        </section>
+
+        <!-- ============================================
+        SECTION 20
+        ============================================ -->
+        <section class="section" id="section-20">
+            <span class="section-number">Section 20</span>
+            <h2>Contact Us</h2>
+            <p>
+                If you have any questions, concerns, or feedback about these Terms,
+                please contact us at:
+            </p>
+            <div style="background: var(--dark-navy); padding: 18px 24px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                <p style="margin-bottom: 4px;">
+                    <strong>📧 Email:</strong>
+                    <a href="mailto:gamerhub117x@gmail.com" style="color: var(--cyan);">
+                        gamerhub117x@gmail.com
+                    </a>
+                </p>
+                <p style="margin-bottom: 0;">
+                    <strong>🌐 Website:</strong>
+                    <a href="#" style="color: var(--cyan);">[Your Website URL]</a>
+                </p>
+            </div>
+            <p style="margin-top: 14px;">
+                We aim to respond to all inquiries within 48 hours.
+            </p>
+        </section>
+
+        <!-- ============================================
+        ACKNOWLEDGMENT
+        ============================================ -->
+        <div style="background: rgba(123, 47, 190, 0.08); border: 1px solid rgba(123, 47, 190, 0.15); border-radius: 12px; padding: 20px 24px; margin-top: 30px;">
+            <p style="font-size: 14px; color: var(--gray); margin-bottom: 0; text-align: center;">
+                By using Gamer•Hub, you acknowledge that you have read, understood, and
+                agree to be bound by these Terms &amp; Conditions.
+            </p>
+            <p style="font-size: 13px; color: rgba(255,255,255,0.3); margin-top: 8px; text-align: center;">
+                Last Updated: July 1, 2026 &nbsp;·&nbsp; Version 2.0
+            </p>
+        </div>
+
+        <!-- ============================================
+        FOOTER
+        ============================================ -->
+        <footer class="footer">
+            <div class="logo-small">
+                <span class="g">GAMER</span>
+                <span class="h">HUB</span>
+                <span style="color: var(--gray); font-weight: 400; font-size: 12px;">™</span>
+            </div>
+            <p>
+                &copy; 2026 Gamer•Hub. All rights reserved.
+            </p>
+            <p style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="mailto:gamerhub117x@gmail.com" class="contact">📧 gamerhub117x@gmail.com</a>
+            </p>
+            <p style="font-size: 11px; opacity: 0.3;">
+                Built for players. Powered by passion. 🎮
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
